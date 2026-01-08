@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0f1115;
+  font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: #0f1115;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid #22252c;
+}
+
+h1 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #64ffda;
+  background-color: #22252c;
+  text-decoration: none;
+  margin: 5px 10px;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+nav a:hover {
+  background-color: #2e323a;
+  transform: scale(1.05);
+  color: #ffffff;
+}
+
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+h2 {
+  text-align: center;
+  color: #64ffda;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.intro p {
+  font-size: 1.2rem;
+  margin: 20px 0;
+  color: #b0b0b0;
+}
+
+.intro .highlight {
+  color: #64ffda;
+  font-weight: 600;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.skill-card {
+  background-color: #22252c;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(100, 255, 218, 0.2);
+}
+
+.skill-card h3 {
+  color: #64ffda;
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+}
+
+.skill-card p {
+  color: #b0b0b0;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.project-card {
+  background-color: #22252c;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(100, 255, 218, 0.2);
+}
+
+.project-img {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+.project-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.project-content {
+  padding: 25px;
+}
+
+.project-content h3 {
+  color: #ffffff;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+.project-content p {
+  color: #b0b0b0;
+  margin-bottom: 15px;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.tag {
+  background-color: #2e323a;
+  color: #64ffda;
+  padding: 5px 12px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+
+.project-link {
+  display: inline-block;
+  color: #64ffda;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.project-link:hover {
+  color: #ffffff;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.social-links ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.social-links li {
+  transition: transform 0.2s ease;
+}
+
+.social-links li:hover {
+  transform: scale(1.05);
+}
+
+.social-links a {
+  color: #ffffff;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-links img {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  object-fit: cover;
+  transition: box-shadow 0.3s ease;
+}
+
+.social-links img:hover {
+  box-shadow: 0 6px 16px rgba(100, 255, 218, 0.3);
+}
+
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #0a0c0f;
+  color: #b0b0b0;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  section {
+    padding: 60px 20px;
+  }
+}
